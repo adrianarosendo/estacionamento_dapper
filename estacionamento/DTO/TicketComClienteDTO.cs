@@ -1,6 +1,11 @@
-﻿namespace estacionamento.DTO
+﻿using estacionamento.Models;
+
+namespace estacionamento.DTO
 {
-    public class TicketComCliente
+    public class TicketComClienteDTO
     {
+        public Ticket Ticket { get; set; }
+
+        public string NomeCliente { get; set; }
     }
 }

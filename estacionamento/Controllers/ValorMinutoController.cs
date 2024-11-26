@@ -59,7 +59,7 @@ public class ValorMinutoController : Controller
     [HttpGet("/{id}/editar")]
     public IActionResult Editar([FromRoute] int Id)
     {
-        var valor = _connection.Query<ValorCobrado>("SELECT * FROM valores WHERE Id=@Id", new ValorCobrado { Id = Id }).FirstOrDefault();
+        var valor = _connection.QueryFirstOrDefault<ValorCobrado>("SELECT * FROM valores WHERE Id=@Id", new ValorCobrado { Id = Id });
         return View(valor);
     }
 
