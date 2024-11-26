@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ui.Models
+namespace estacionamento.Models
 {
     public class Cliente
     {

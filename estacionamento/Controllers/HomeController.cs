@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ui.Controllers;
+namespace estacionamento.Controllers;
 
 public class HomeController : Controller
 {

@@ -24,6 +24,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/adria/Documents/estacionamento_dapper/estacionamento/Views/ValorMinuto/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmFsb3JNaW51dG9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/adria/Documents/estacionamento_dapper/estacionamento/Views/ValorMinuto/Novo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmFsb3JNaW51dG9cTm92by5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/adria/Documents/estacionamento_dapper/estacionamento/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

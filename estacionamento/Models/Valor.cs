@@ -1,9 +1,9 @@
-﻿namespace ui.Models
+﻿namespace estacionamento.Models
 {
-    public class Valor
+    public class ValorCobrado
     {
         public required int Id { get; set; }
         public float Minuto { get; set; }
-        public float ValorDoMinuto { get; set; }
+        public float Valor { get; set; }
     }
 }
