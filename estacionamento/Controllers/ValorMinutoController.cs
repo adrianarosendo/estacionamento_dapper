@@ -56,4 +56,23 @@ public class ValorMinutoController : Controller
     }
 
 
+    [HttpGet("/{id}/editar")]
+    public IActionResult Editar([FromRoute] int Id)
+    {
+        var valor = _connection.Query<ValorCobrado>("SELECT * FROM valores WHERE Id=@Id", new ValorCobrado { Id = Id }).FirstOrDefault();
+        return View(valor);
+    }
+
+    [HttpPost("/{id}/alterar")]
+    public IActionResult Alterar([FromRoute] int Id, [FromForm] ValorCobrado valorCobrado)
+    {
+        string sql = "UPDATE valores SET Minuto = @Minuto, Valor = @Valor WHERE Id = @Id;";
+
+        _connection.Open();
+        _ = _connection.Execute(sql, new { Id, valorCobrado.Minuto, valorCobrado.Valor });
+
+
+        // Redireciona para a página principal ou lista de valores
+        return Redirect("/valores");
+    }
 }
