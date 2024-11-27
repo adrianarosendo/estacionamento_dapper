@@ -1,7 +1,9 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace estacionamento.Models
 {
+    [Table("clientes")]
     public class Cliente
     {
         public required int Id { get; set; }

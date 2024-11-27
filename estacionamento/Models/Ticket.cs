@@ -1,5 +1,9 @@
-﻿namespace estacionamento.Models
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace estacionamento.Models
 {
+    [Table("tickets")]
+
     public class Ticket
     {
         public required int Id { get; set; }
